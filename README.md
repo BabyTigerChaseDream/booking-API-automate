@@ -1,2 +1,2 @@
-# booking-API-automate
-API automation test in Booking
+# booking-request-API-automate
+Automate all network requests/response to simulate user behavior 
