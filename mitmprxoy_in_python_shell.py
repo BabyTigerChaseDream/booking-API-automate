@@ -10,8 +10,8 @@ https://stackoverflow.com/questions/57178896/how-to-shutdown-dumpmaster-mitmprox
 class AdjustBody:
     def response(self, flow: http.HTTPFlow) -> None:
         if "holdout" in flow.request.url:
-            print("[CATCH IT !!!]: %s" % flow.request.url)
-            #print("[CATCH IT !!!]: %s" % flow.response.text)
+            print("[*** request ***]: %s" % flow.request.url)
+            print("[*** response ***]: %s" % flow.response.text)
 
 add_on = AdjustBody()
 
